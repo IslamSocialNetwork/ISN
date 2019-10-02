@@ -36,6 +36,16 @@ body {
     font-size: 1.5rem;
     border-radius: 2rem; }
 
+#in_a_team {
+  font-family: 'PT Sans', sans-serif; }
+
+#quotes i {
+  opacity: 0.3; }
+
+#footer {
+  font-size: 100px;
+  font-weight: 100; }
+
 @media (max-width: 575px) {
   .navbar {
     background: #202020; }
