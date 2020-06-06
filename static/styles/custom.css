@@ -1,0 +1,57 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.navbar {
+  font-weight: 100;
+  background: #202020; }
+  .navbar .nevbar-brand h3 {
+    font-weight: 100; }
+  .navbar .nav-item {
+    font-size: 1.3rem; }
+
+.nav-link:hover {
+  transition: border;
+  border-bottom: 1px solid deepskyblue;
+  border-top: 1px solid deepskyblue; }
+
+#showcase {
+  background: url("../img/fonstola.ru-317042.jpg") top center/cover no-repeat;
+  min-height: 300px;
+  max-height: 300px;
+  position: relative; }
+  #showcase #header {
+    z-index: 2; }
+  #showcase #overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  #showcase h1 {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1; }
+  #showcase #what_is_it {
+    font-size: 1.5rem;
+    border-radius: 2rem; }
+
+#in_a_team {
+  font-family: 'PT Sans', sans-serif; }
+
+#quotes i {
+  opacity: 0.3; }
+
+#footer {
+  font-size: 100px;
+  font-weight: 100; }
+
+@media (max-width: 575px) {
+  .navbar {
+    background: #202020; }
+    .navbar .nav-link:hover {
+      border-bottom: none; }
+  #showcase h1 {
+    font-size: 4rem; }
+  #showcase h3 {
+    font-size: 1.5rem; } }

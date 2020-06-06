@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../static/styles/main.css">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'base/favicon.ico' %}"/>
+
+</head>
+<body>
+<!-- start:Установка иконки ISN и добавление шапки с пунктами "Домой", "Преимущество", "О нас"  -->
+<div class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <h3 class="mb-0">
+            <img src="{% static 'base/favicon.ico' %}" width="35" height="35" class="d-inline-block align-top" alt="">
+            ISN
+        </h3>
+    </a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-center">Домой</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-center">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-center">Преимущество</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- end: Установка иконки ISN и добавление шапки с пунктами "Домой", "Преимущество", "О нас"  -->
+
+<!-- start: Установка фотографии с мечетью, название соц. сети, кнопки "Что это?"  -->
+<section id="showcase" class="d-flex justify-content-center align-items-center">
+    <div id="overlay"></div>
+
+    <div id="header" class="container text-white text-center">
+        <h3 class="display-5 mb-0"></h3>
+        <h1 class="display-3">Islam Social Network</h1>
+        <p class="lead d-none d-sm-block">Регистрируйся</p>
+        <button id="what_is_it" class="btn btn-lg btn-primary px-5 mt-2" data-toggle="modal" data-target="#bokingModel">
+            Что это?
+        </button>
+
+    </div>
+
+</section>
+
+<!-- end:Установка фотографии с мечетью, название соц. сети, кнопки "Что это?" -->
+
+<!-- start: Установка фотографии с мечетью, название соц. сети, кнопки "Что это?"  -->
+<section>
+    <div class="container text-center mt-5">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, officia?</h2>
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <img src="{% static 'base/favicon.ico' %}" width="200" height="200"
+                     class="img-fluid d-none d-sm-inline">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugit minus quaerat
+                    quis sit, voluptatibus?</p>
+            </div>
+            <div class="col-md-4 p-3">
+                <img src="{% static 'base/favicon.ico' %}" width="200" height="200"
+                     class="img-fluid d-none d-sm-inline">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugit minus quaerat
+                    quis sit, voluptatibus?</p>
+            </div>
+            <div class="col-md-4 p-3">
+                <img src="{% static 'base/favicon.ico' %}" width="200" height="200"
+                     class="img-fluid d-none d-sm-inline">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugit minus quaerat
+                    quis sit, voluptatibus?</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- end: Установка фотографии с мечетью, название соц. сети, кнопки "Что это?"  -->
+
+
+<!-- start: Добавление карточки  -->
+<section>
+    <div class="container text-center p-3">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti exercitationem facilis libero odit, porro
+            rerum.</h3>
+        <div class="row ">
+            <div class="col-md-6 mt-3">
+                <div class="card">
+                    <img src="{% static '/img/fonstola.ru-317042.jpg' %}" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">ISN</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo.</p>
+                        <a href="" class="btn btn-lg btn-outline-info">Кнопка</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-3">
+                <div class="card">
+                    <img src="{% static '/img/fonstola.ru-317042.jpg' %}" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">ISN</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo.</p>
+                        <a href="" class="btn btn-lg btn-outline-info">Кнопка</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- end: Добавление карточки  -->
+
+
+<!-- start: Добавление заголовка, кавычки и текстов  -->
+<section id="quotes">
+    <div class="container text-center mt-5">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, sit.</h3>
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <i class="fa fa-quote-left fa-2x text-primary mb-4" aria-hidden="true"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus
+                        eligendi excepturi facere natus perferendis quam ratione veniam vero! Accusantium aliquid
+                        asperiores consequatur consequuntur perspiciatis quibusdam suscipit velit voluptate.10</p>
+                    <footer class="blockquote-footer">Lorem ipsum dolor sit amet, consectetur adipisicing.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 mt-3">
+                <i class="fa fa-quote-left fa-2x text-primary mb-4" aria-hidden="true"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus
+                        eligendi excepturi facere natus perferendis quam ratione veniam vero! Accusantium aliquid
+                        asperiores consequatur consequuntur perspiciatis quibusdam suscipit velit voluptate.10</p>
+                    <footer class="blockquote-footer">Lorem ipsum dolor sit amet, consectetur adipisicing.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 mt-3">
+                <i class="fa fa-quote-left fa-2x text-primary mb-4" aria-hidden="true"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus
+                        eligendi excepturi facere natus perferendis quam ratione veniam vero! Accusantium aliquid
+                        asperiores consequatur consequuntur perspiciatis quibusdam suscipit velit voluptate.10</p>
+                    <footer class="blockquote-footer">Lorem ipsum dolor sit amet, consectetur adipisicing.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: Добавление заголовка, кавычки и текстов  -->
+
+
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7 mb-3">
+
+                <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static '/img/fonstola.ru-317042.jpg' %}" alt="" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static '/base/favicon.ico' %}" alt="" class="d-block w-100">
+                        </div>
+                        <a href="#mainCarousel" class="carousel-control-prev" data-slide="prev" role="button">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" area-hidden="true"></span>
+                            <span class="sf-only"></span>
+                        </a>
+                        <a href="#mainCarousel" class="carousel-control-next" data-slide="next" role="button">
+                            <span class="carousel-control-next-icon" aria-hidden="true" area-hidden="true"></span>
+                            <span class="sf-only"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 mt-3">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa cum expedita necessitatibus
+                    possimus.</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga fugit tenetur
+                    voluptate.</p>
+                <a href="">Lorem ipsum dolor <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center mt-5">
+        <i class="fa fa-quote-left fa-2x text-primary mb-4" aria-hidden="true"></i>
+        <blockquote class="blockquote">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus
+                eligendi excepturi facere natus perferendis quam ratione veniam vero! Accusantium aliquid
+                asperiores consequatur consequuntur perspiciatis quibusdam suscipit velit voluptate.10</p>
+            <footer class="blockquote-footer">Lorem ipsum dolor sit amet, consectetur adipisicing.</footer>
+        </blockquote>
+
+    </div>
+</section>
+
+
+<section class="bg-dark py-5">
+    <div class="container text-white text-center">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, perferendis.</p>
+    </div>
+</section>
+
+<section id="footer" class="p-3 bg-secondary">
+    <ul class="nav text-center justify-content-center flex-column flex-is-row">
+        <li class="nav-item">
+            <a href="" class="nav-link text-white">FAQ</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link text-white">Вступить</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link text-white">Документация</a>
+        </li>
+    </ul>
+</section>
+
+
+<div class="modal" id="bokingModel" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"> Islam Social Network </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, corporis.</p>
+                    <div class="form-group">
+
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@mail.ru">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adults">Number</label>
+                        <select class="form-control" id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--<section>
+    <div class="container text-white text-center">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ut?</p>
+        <form action="" class="form-inline">
+            <div class="input-group">
+                <input type="text" name="text" class="form-control" placeholder="Your Email" id="">
+                <div class="input-group-append">
+                    <button class="btn btn-primary">Join now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
